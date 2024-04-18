@@ -4,9 +4,14 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
+    "margin-top": 12,
+    "margin-left": 12,
+    "margin-right": 12,
+    // "margin-bottom": -12,
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "clock",
         "hyprland/workspaces"
 	//"hyprland/window"
         //"sway/mode",
@@ -18,19 +23,19 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
+        //"idle_inhibitor",
+        //"pulseaudio",
+        //"network",
+        //"power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
-        "backlight",
+        //"temperature",
+        //"backlight",
         "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
-        "clock",
+        //"sway/language",
+        //"battery",
+        //"battery#bat2",
+        //"clock",
         "tray"
     ],
     // Modules configuration
@@ -50,6 +55,9 @@
     //            "default": ""
     //        }
     // },
+    "custom/clock": {
+        "exec": "date + '%d. %b %H:%M'"
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
