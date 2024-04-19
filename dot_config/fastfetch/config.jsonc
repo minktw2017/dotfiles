@@ -11,9 +11,9 @@
         "separator": " "
     },
     "modules": [
-	"break",
-	"break",
-	"break",
+        "break",
+	      "break",
+	      "break",
         {
             "type": "host",
             "key": "╭─󰌢",

@@ -13,7 +13,7 @@ window#waybar {
     background-color: rgba(0, 0, 0, 0.5);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     border: none;
-    color: #ffffff;
+    color: #a6adc8;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -64,6 +64,7 @@ button:hover {
     color: #ffffff;
     font-weight: bold;
     background-color: #ccd0da;
+    border-radius: 12px;
 }
 
 #workspaces button:hover {
@@ -127,7 +128,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #7287fd;
+    background-color: #b4befe;
     opacity: 0.8;
 }
 
@@ -183,13 +184,13 @@ label:focus {
 }
 
 #cpu {
-    background-color: #209fb5;
+    background-color: #a6e3a1;
     /* color: #000000; */
     opacity: 0.8;
 }
 
 #memory {
-    background-color: #ee76cb;
+    background-color: #f5c2e7;
     opacity: 0.8;
 }
 
@@ -298,7 +299,7 @@ label:focus {
 }
 
 #keyboard-state {
-    background-color: #dc8a78;
+    background-color: #f9e2af;
     /* color: #000000; */
     padding: 0 5px;
     /* margin: 0 5px; */
@@ -311,6 +312,7 @@ label:focus {
 }
 
 #keyboard-state > label.locked {
+    color: #fff;
     background: rgba(0, 0, 0, 0.2);
 }
 
